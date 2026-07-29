@@ -18,7 +18,7 @@ struct PrimarySurfButton: View {
                     .fontWeight(.medium)
                     .opacity(0.9)
             }
-            .foregroundStyle(Color.white)
+            .foregroundStyle(Color.Swellness.plumInk)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 18)
             .background {

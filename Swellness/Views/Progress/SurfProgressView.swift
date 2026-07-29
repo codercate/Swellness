@@ -24,19 +24,22 @@ struct SurfProgressView: View {
                     }
 
                     SoftCard {
-                        Text(monthlyLine)
-                            .font(.system(.subheadline, design: .rounded))
-                            .fontWeight(.medium)
-                            .foregroundStyle(Color.Swellness.plumInk.opacity(0.72))
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
+                        VStack(alignment: .leading, spacing: 14) {
+                            Text(monthlyLine)
+                                .font(.system(.subheadline, design: .rounded))
+                                .fontWeight(.medium)
+                                .foregroundStyle(Color.Swellness.plumInk.opacity(0.72))
+                                .fixedSize(horizontal: false, vertical: true)
 
-                    SoftCard {
-                        Text(appState.progressInsight)
-                            .font(.system(.subheadline, design: .rounded))
-                            .fontWeight(.medium)
-                            .foregroundStyle(Color.Swellness.plumInk.opacity(0.72))
-                            .fixedSize(horizontal: false, vertical: true)
+                            Divider()
+                                .overlay(Color.Swellness.plumInk.opacity(0.1))
+
+                            Text(appState.progressInsight)
+                                .font(.system(.subheadline, design: .rounded))
+                                .fontWeight(.medium)
+                                .foregroundStyle(Color.Swellness.plumInk.opacity(0.72))
+                                .fixedSize(horizontal: false, vertical: true)
+                        }
                     }
 
                     Spacer(minLength: 120)
