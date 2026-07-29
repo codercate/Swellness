@@ -164,7 +164,8 @@ private struct SkipSurfSheet: View {
 
                     PoppyCapsuleButton(
                         title: "Close with kindness",
-                        colors: [Color.Swellness.popPink, Color.Swellness.popCoral]
+                        colors: [Color.Swellness.popPink, Color.Swellness.popCoral],
+                        textColor: .white
                     ) {
                         onConfirm()
                     }

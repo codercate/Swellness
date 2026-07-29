@@ -149,8 +149,9 @@ struct EnergyChipRow: View {
 
 struct PoppyCapsuleButton: View {
     let title: String
-    /// Default matches the original soft aqua “Save Session” look.
-    var colors: [Color] = [Color.Swellness.aqua, Color.Swellness.oceanDeep]
+    /// Default matches the Home screen's primary surf CTA.
+    var colors: [Color] = [Color.Swellness.blush, Color.Swellness.peach]
+    var textColor: Color = Color.Swellness.plumInk
     let action: () -> Void
 
     var body: some View {
@@ -160,7 +161,7 @@ struct PoppyCapsuleButton: View {
                 .fontWeight(.medium)
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 16)
-                .foregroundStyle(Color.white)
+                .foregroundStyle(textColor)
                 .background {
                     Capsule()
                         .fill(
