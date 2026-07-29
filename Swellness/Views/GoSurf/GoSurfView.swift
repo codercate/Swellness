@@ -20,6 +20,13 @@ struct GoSurfView: View {
                     .foregroundStyle(Color.white.opacity(0.78))
                     .opacity(appeared ? 1 : 0)
                     .offset(y: appeared ? 0 : 6)
+
+                Text("Head out and close the app — we’ll pick this up when you’re back.")
+                    .font(.system(.footnote, design: .rounded))
+                    .fontWeight(.medium)
+                    .foregroundStyle(Color.white.opacity(0.6))
+                    .padding(.top, 24)
+                    .opacity(appeared ? 1 : 0)
             }
             .multilineTextAlignment(.center)
             .padding(32)
